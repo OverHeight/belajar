@@ -3,11 +3,7 @@ import Spinner from "./spinner";
 
 const Button = ({ nama, type, Click, loading }) => {
   return (
-    <button
-      className={`btn btn-${type} disable`}
-      onClick={Click}
-      disabled={loading}
-    >
+    <button className={`btn btn-${type}`} onClick={Click} disabled={loading}>
       {loading ? <Spinner /> : nama}
     </button>
   );
